@@ -148,6 +148,20 @@ mutable       field    net/minecraft/network/packet/s2c/play/PlayerPositionLookS
 accessible    field    net/minecraft/network/packet/s2c/play/PlayerPositionLookS2CPacket    yaw    F
 mutable       field    net/minecraft/network/packet/s2c/play/PlayerPositionLookS2CPacket    yaw    F
 
+# PlayerMoveC2SPacket
+mutable       field    net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket    x    D
+accessible    field    net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket    x    D
+mutable       field    net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket    z    D
+accessible    field    net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket    z    D
+
+# VehicleMoveC2SPacket
+mutable       field    net/minecraft/network/packet/c2s/play/VehicleMoveC2SPacket    x    D
+accessible    field    net/minecraft/network/packet/c2s/play/VehicleMoveC2SPacket    x    D
+mutable       field    net/minecraft/network/packet/c2s/play/VehicleMoveC2SPacket    z    D
+accessible    field    net/minecraft/network/packet/c2s/play/VehicleMoveC2SPacket    z    D
+
+# GameStateChangeS2CPacket
+accessible    field    net/minecraft/network/packet/s2c/play/GameStateChangeS2CPacket$Reason    id    I
 
 # VehicleMoveC2SPacket
 # - For EntityControl to change the pitch and yaw of the vehicle
@@ -156,4 +170,8 @@ mutable       field    net/minecraft/network/packet/c2s/play/VehicleMoveC2SPacke
 accessible    field    net/minecraft/network/packet/c2s/play/VehicleMoveC2SPacket    pitch    F
 mutable       field    net/minecraft/network/packet/c2s/play/VehicleMoveC2SPacket    pitch    F
 
+# ClientConnection
+accessible    class    net/minecraft/network/ClientConnection$QueuedPacket
+mutable       field    net/minecraft/network/ClientConnection$QueuedPacket    packet    Lnet/minecraft/network/Packet;
+accessible    field    net/minecraft/network/ClientConnection$QueuedPacket    packet    Lnet/minecraft/network/Packet;
 
